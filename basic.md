@@ -36,3 +36,44 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 
 然后点击"Install"按钮，安装Xcode的命令行工具
 
+## Homebrew
+
+使用郭debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的软件包。
+
+安装Homebrew:
+
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+更新formulae和Homebrew:
+
+    brew update
+
+搜索某个软件:
+
+    brew search wget
+
+安装某个软件:
+
+    brew install wget
+
+查看需要升级的软件:
+
+    brew outdated
+
+升级所有的软件:
+
+    brew upgrade
+
+升级某个软件:
+
+    brew upgrade wget
+
+删除某个软件:
+
+    brew uninstall wget --force
+
+出错以后的处理:
+
+    brew update
+    brew doctor
+
