@@ -64,12 +64,24 @@ Mac OS X支持网络安装，直接使用command+R，就可以进入恢复模式
 
     sudo /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/Mavericks --applicationpath /Applications/Install\ OS\ X\ Mavericks.app --nointeraction
 
-* 安装盘制作完毕后，重启并按Option键，选择安装盘安装。 安装或者恢复之前，一般使用时光机器进行备份，然后用磁盘工具删掉之前的机器磁盘上的内容。
-
 ### 制作恢复盘
 
 苹果提供 OS X Recovery Disk Assistant 工具，这个工具将在本地磁盘制作一个恢复分区。下载地址：
 
     http://support.apple.com/kb/dl1433
 
+## 安装 OS X
 
+安装盘制作完毕后，重启并按Option键，选择安装盘安装。 安装或者恢复之前，一般使用时光机器进行备份，然后用磁盘工具删掉之前的机器磁盘上的内容。
+
+安装一般需要30分钟左右。
+
+## 安装以后
+
+* 更改安全设置
+
+允许从所有来源安装应用程序，在Security and Privacy里设置"Allow apps downloaded from" 选项为 "Anywhere"
+
+* 更改触摸板默认设置
+
+在"Trackpad"里打开"Tap to click"设置
