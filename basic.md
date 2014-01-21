@@ -78,6 +78,43 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
     brew update
     brew doctor
 
+## homebrew-cask
+
+通常 OS X下软件的安装是使用 App Store进行的，homebrew-cask是一个基于HomeBrew的软件安装程序，使用 homebrew-cask 可以在命令行下安装软件包， 相对 Mac App Store ，还有一些优势：
+
+* 安装软件体验非常一致简洁优雅
+* 对常用软件支持更全面，例如 MPlayerX 已经宣布不在更新 Mac App Store上 的版本
+* 软件更新速度快，体验好。例如Alfred 2.0已经出了很久，但在 Mac App Store 上还是1.2版本，QQ也是这样的情况
+* Mac App Store 生态圈远不完善，审核流程过长，限制太多，维护成本过高让很多应用开发者被迫离开。
+
+安装homebrew-cask
+
+    brew tap phinze/cask
+    brew install brew-cask
+    brew cask install google-chrome
+
+常用命令
+
+    brew cask search 列出所有可以被安装的软件
+    brew cask search drop 查找所有和 drop 相关的应用
+    brew cask info thunder 查看 迅雷 应用的信息，这货安装的可是最新版本的迅雷哦！
+    brew cask uninstall qq 卸载 QQ
+
+一键装机？有了homebrew-cask就可以
+
+    brew cask install alfred
+    brew cask install qq
+    brew cask install skype
+    brew cask install thunder
+    brew cask install mplayerx
+    brew cask install evernote
+    brew cask install skitch
+    brew cask install dropbox
+    brew cask install google-chrome
+    brew cask install mou
+    brew cask install iterm2
+    brew cask install sublime-text
+
 ## zsh
 
 喜欢强大的zsh，直接切换成zsh
