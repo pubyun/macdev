@@ -78,3 +78,18 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
     brew update
     brew doctor
 
+## zsh
+
+喜欢强大的zsh，直接切换成zsh
+
+    chsh -s /bin/zsh
+
+## oh-my-zsh
+
+
+## tmux
+
+## 浏览器
+
+Google Chrome
+firefox
