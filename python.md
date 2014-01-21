@@ -56,3 +56,8 @@
 
     mkvirtualenv --no-site-packages test
 
+## PyCharm
+
+PyCharm是python最好的集成开发工具，目前有专业版和社区版可供选择。
+
+
