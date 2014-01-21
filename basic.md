@@ -43,6 +43,7 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 安装Homebrew:
 
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    brew doctor
 
 更新formulae和Homebrew:
 
