@@ -42,25 +42,15 @@ Mac OS X支持网络安装和本地安装。网络安装，就是直接使用com
 
 ### 制作安装盘
 
-你可以从Mac App Store下载安装镜像，或从百度网盘下载安装镜像：
+你可以从Mac App Store下载安装镜像:
 
-* 如果你是从百度网盘下载的安装镜像
+    https://itunes.apple.com/cn/app/os-x-mavericks/id675248567?mt=12
 
-下面是OS X Mavericks 10.9.1 的镜像
-
-    http://pan.baidu.com/s/1ntM6qud
-
-下载完成之后双击挂载
-
-在命令行输入下面的指令，制作安装盘:
-
-    sudo /Volumes/Установка\ OS X\ Mavericks/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/Mavericks --applicationpath /Volumes/Установка\ OS X\ Mavericks/Install\ OS\ X\ Mavericks.app --nointeraction
-
-* 如果你从Mac App Store下载下来的安装镜像
-
-在命令行输入下面的命令，制作安装盘:
+从App Store完成下载后，OS X Mavericks安装程序会自动启动，不要点击继续，停在安装界面第一页。插入刚才分区好的移动硬盘或者U盘，在命令行输入下面的命令，制作安装盘:
 
     sudo /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/Mavericks --applicationpath /Applications/Install\ OS\ X\ Mavericks.app --nointeraction
+
+等待创建完成，你就拥有了一个安装启动盘，以后都可以用来安装恢复系统。
 
 ### 制作恢复盘
 
