@@ -2,7 +2,7 @@
 
 ## Alfred
 
-Alfred是Mac平台上使用最频繁的效率工具，被誉为神兵利器。Alfred 2发布以后，在免费版的基础上加入了 Powerpack 模式，引入了工作流的概念，可以做出远比快速启动和自定义搜索更酷的事情。
+Alfred是Mac平台上使用最频繁的效率工具，被誉为神兵利器。Alfred 2发布以后，在免费版的基础上加入了Powerpack模式，引入了工作流的概念，可以做出远比快速启动和自定义搜索更酷的事情。
 
 免费版的Alfred已经可以满足我们的日常需要，极大提高我们的工作效率，常用的功能有：
 
@@ -30,7 +30,7 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
     $ xcode-select -p
     /Library/Developer/CommandLineTools
 
-打开一个终端窗口（Terminal），运行命令：
+打开一个终端窗口(Terminal)，运行命令：
 
     xcode-select --install
 
@@ -38,7 +38,7 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 
 ## Homebrew
 
-使用过debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的软件包。
+使用过Debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的软件包。
 
 安装Homebrew:
 
@@ -80,12 +80,12 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 
 ## homebrew-cask
 
-通常 OS X下软件的安装是使用 App Store进行的，homebrew-cask是一个基于HomeBrew的软件安装程序，使用 homebrew-cask 可以在命令行下安装软件包， 相对 Mac App Store ，还有一些优势：
+通常OS X下软件的安装是使用App Store进行的，homebrew-cask是一个基于HomeBrew的软件安装程序，使用homebrew-cask可以在命令行下安装软件包，相对Mac App Store，还有一些优势：
 
 * 安装软件体验非常一致简洁优雅
-* 对常用软件支持更全面，例如 MPlayerX 已经宣布不在更新 Mac App Store上 的版本
-* 软件更新速度快，体验好。例如Alfred 2.0已经出了很久，但在 Mac App Store 上还是1.2版本，QQ也是这样的情况
-* Mac App Store 生态圈远不完善，审核流程过长，限制太多，维护成本过高让很多应用开发者被迫离开。
+* 对常用软件支持更全面，例如MPlayerX已经宣布不在更新Mac App Store上的版本
+* 软件更新速度快，体验好。例如Alfred 2.0已经出了很久，但在Mac App Store上还是1.2版本，QQ也是这样的情况
+* Mac App Store生态圈远不完善，审核流程过长，限制太多，维护成本过高让很多应用开发者被迫离开。
 
 安装homebrew-cask
 

@@ -6,13 +6,13 @@
 
 * 使用Homebrew安装更新的python版本
 * 同时安装2.7.x和3.x的python
-* Homebrew 会同时安装setuptools和pip等工具
+* Homebrew会同时安装setuptools和pip等工具
 
-安装 python 2.7.x：
+安装python 2.7.x：
 
     brew install python --with-brewed-openssl
 
-安装 python 3.x：
+安装python 3.x：
 
     brew install python3 --with-brewed-openssl
 
@@ -37,11 +37,11 @@
 
     sudo pip install virtualenv virtualenvwrapper
 
-创建 virtualenv 目录：
+创建virtualenv目录：
 
     mkdir ~/virtualenvs
 
-在.zshrc 或者 .bash_profile 里配置virtualenv:
+在.zshrc或者.bash_profile里配置virtualenv:
 
     # virtualenvwrapper
     export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
