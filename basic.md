@@ -38,7 +38,7 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 
 ## Homebrew
 
-使用过Debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的软件包。Homebrew为Mac OS X提供了非常方便的软件安装方式，解决了包的依赖问题，不再需要烦人的sudo，一键式编译，无参数困扰。
+使用过Debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的开源软件包。Homebrew为Mac OS X提供了非常方便的软件安装方式，解决了包的依赖问题，不再需要烦人的sudo，一键式编译，无参数困扰。
 
 由于Homebrew的安装方式可能变化，请到[官方网站](http://brew.sh)查看最新的方法和文档。
 
@@ -94,27 +94,55 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 
 ## homebrew-cask
 
-通常OS X下软件的安装是使用App Store进行的，homebrew-cask是一个基于HomeBrew的软件安装程序，使用homebrew-cask可以在命令行下安装软件包，相对Mac App Store，还有一些优势：
+通常OS X下二进制软件是通过App Store安装的，homebrew-cask是一个基于HomeBrew的软件安装程序，使用homebrew-cask可以在命令行下安装软件包，相对Mac App Store，还有一些优势：
 
-* 安装软件体验非常一致简洁优雅
+* 安装软件体验一致、简洁、优雅、快速
 * 对常用软件支持更全面，例如MPlayerX已经宣布不在更新Mac App Store上的版本
-* 软件更新速度快，体验好。例如Alfred 2.0已经出了很久，但在Mac App Store上还是1.2版本，QQ也是这样的情况
+* 软件更新速度快。例如Alfred 2.0已经出了很久，但在Mac App Store上还是1.2版本，QQ也是这样的情况
 * Mac App Store生态圈远不完善，审核流程过长，限制太多，维护成本过高让很多应用开发者被迫离开。
 
-安装homebrew-cask
+homebrew-cask和Homebrew的区别：
+
+* Homebrew安装的是源文件包, 下载源文件、编译、安装，比如安装wget, gnupg, mutt等。
+* homebrew-cask安装的是二进制软件包, 比如QQ，Chrome，evernote等。homebrew-cask安装软件时自动创建软连接到Application目录，这样在Launchpad中也能查看到安装的软件，方便启动软件。
+
+### 安装homebrew-cask
 
     brew tap phinze/cask
     brew install brew-cask
-    brew cask install google-chrome
 
-常用命令
+### 常用命令
 
-    brew cask search 列出所有可以被安装的软件
-    brew cask search drop 查找所有和 drop 相关的应用
-    brew cask info thunder 查看 迅雷 应用的信息，这货安装的可是最新版本的迅雷哦！
-    brew cask uninstall qq 卸载 QQ
+列出所有可以被安装的软件：
 
-一键装机？有了homebrew-cask就可以
+    brew cask search
+
+查找所有和drop相关的应用:
+
+    brew cask search drop
+
+查看迅雷应用的信息:
+
+    brew cask info thunder
+
+卸载QQ:
+
+    brew cask uninstall qq
+
+查看已安装的软件
+
+    brew cask list
+
+更新Casks:
+
+    brew update && brew upgrade brew-cask
+
+关于软件更新，目前homebrew-cask并不提供命令直接更新已安装的软件，软件更新主要是通过软件自身的更新流程，不过也可以通过以下命令先删除软件，再重新安装。
+
+    brew cask uninstall APP && brew cask install APP
+
+
+### 一键装机？有了homebrew-cask就可以
 
     brew cask install alfred
     brew cask install qq
