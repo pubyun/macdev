@@ -38,7 +38,9 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 
 ## Homebrew
 
-使用过Debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的软件包。
+使用过Debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的软件包。Homebrew为Mac OS X提供了非常方便的软件安装方式，解决了包的依赖问题，不再需要烦人的sudo，一键式编译，无参数困扰。
+
+由于Homebrew的安装方式可能变化，请到[官方网站](http://brew.sh)查看最新的方法和文档。
 
 安装Homebrew:
 
@@ -48,6 +50,10 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 更新formulae和Homebrew:
 
     brew update
+
+显示已经安装的软件列表:
+
+    brew list
 
 搜索某个软件:
 
@@ -72,6 +78,14 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 删除某个软件:
 
     brew uninstall wget --force
+
+查看软件包信息:
+
+    brew info wget
+
+列出软件包的依赖关系:
+
+    brew deps wget
 
 出错以后的处理:
 
