@@ -38,7 +38,7 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 
 ## Homebrew
 
-使用郭debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的软件包。
+使用过debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的软件包。
 
 安装Homebrew:
 
