@@ -165,6 +165,9 @@ homebrew-cask和Homebrew的区别：
 
 ## oh-my-zsh
 
+## prezto（oh-my-zsh不要用？试试prezto）
+
+https://github.com/sorin-ionescu/prezto
 
 ## tmux
 
@@ -172,3 +175,11 @@ homebrew-cask和Homebrew的区别：
 
 Google Chrome
 firefox
+
+## 编辑器
+
+### Vim
+
+https://github.com/perfectworks/vim
+
+### Emacs

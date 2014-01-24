@@ -43,6 +43,7 @@
 * QQ
 * AliWangWang
 * Skype
+* LimeChar（IRC）
 
 ## 虚拟机
 
@@ -88,12 +89,14 @@
 * xScope（设计度量）
 * Kaleidoscope（文件比较）
 * DiffMerge（文件比较）
+* DiffFork（更好的文件比较）
 
 ## 输入法
 
 * 搜狗输入法
 * 百度输入法
 * QQ输入法
+* 鼠鬚管（开源）
 
 ## 设计相关
 
