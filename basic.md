@@ -36,9 +36,109 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 
 然后点击"Install"按钮，安装Xcode的命令行工具
 
-## Homebrew
+## 软件包管理工具
 
-使用过Debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的Homebrew软件包管理工具，而且这个工具是开源的，可以管理大量Apple没有提供，而你又经常会用到的开源软件包。Homebrew为Mac OS X提供了非常方便的软件安装方式，解决了包的依赖问题，不再需要烦人的sudo，一键式编译，无参数困扰。
+使用过Debian或者RedHat的操作系统的人，一定非常熟悉aptitude或yum包管理工具。在OS X平台下，同样有优秀的软件包管理工具，可以管理大量Apple没有提供，而你又经常会用到的开源软件包。我们有两种选择——MacPorts和Homebrew。
+
+用过FreeBSD的人应该不会对它的包管理系统port感到陌生，而MacPorts正是由FreeBSD的port移植而来的。Homebrew则是一个全新的包管理系统，用Ruby进行开发。这两种包管理系统的工作方式都是下载source code然后在本地编译。但是这两种包管理系统还是存在很大差异的，主要差异有以下三点：
+
+* MacPorts的理念是尽量减少对系统现有库的依赖，而Homebrew则是尽量依赖系统现有库。
+* MacPorts的Package都是安装到/opt/local，而Homebrew的Package都是安装到/usr/local。
+* Macports使用rsync进行同步（现在也可以使用svn，详情点击[这里](https://trac.macports.org/wiki/howto/SyncingWithSVN)），而Homebrew使用git进行同步。
+
+MacPorts会自己重新编译系统现有库，编译时间较长，好处是不怎么依赖系统。同时Package都被安装到了/opt/local中，不会与系统现有的软件发生冲突。而Homebrew则正好相反，Homebrew会尽量使用系统现有库，所以编译时间会显著减少，坏处是与系统紧密依赖。同时Package都被安装到了/usr/local，有可能与系统自带的软件发生冲突。
+
+总体来说，Homebrew使用简单，编译时间短，比较适合新手使用。MacPorts编译时间长，命令还要带上sudo，易用性上没有Homebrew好，但是比较干净，适合有洁癖的人使用（比如说我(^_-)）。
+
+还有最后一个问题，如果你使用了proxy或者firewall，MacPorts默认的rsync有可能会失效，请切换至svn方式进行同步。
+
+### MacPorts
+
+以下内容可能会随时间的推移而发生变化，请到[官方网站](https://www.macports.org/)查看最新文档（ RTFM ！！）
+
+* 安装MacPorts:
+
+1.安装Xcode和Xcode Command Line Tools
+2.在终端中同意Xcode许可
+    
+    sudo xcodebuild －license
+3.到[这里](https://www.macports.org/install.php)选择与你系统版本相符的pkg包，下载并安装
+
+* 常用命令
+
+寻求帮助:
+    
+    port help
+这个命令可以指定动作，如:
+    
+    port help selfupdate
+
+同步 ports tree:
+    
+    sudo port selfupdate
+这个命令也会同时检测是否有新版本的MacPorts。
+
+安装软件:
+    
+    sudo port install gcc
+
+列出所有可用包:
+    
+    port list
+当没有指定包名称时，会列出所有可用包，当指定了包名称时，会列出该包的所有可用版本。
+
+查看已安装软件包:
+    
+    port installed
+
+查看可升级软件包:
+    
+    port outdated
+
+升级所有软件:
+    
+    sudo port upgrade outdated
+
+搜索某个软件:
+    
+    port search gcc
+
+查看软件包信息:
+    
+    port info gcc
+
+清除垃圾:
+    
+    sudo port clean --all gcc
+你也可以清除指定文件，详情自行port help clean。
+
+卸载软件:
+    
+    sudo port uninstall gcc
+
+移除已升级的软件包不活跃的版本:
+    
+    sudo port unistall inactive
+
+列出软件包的依赖关系:
+    
+    port deps gcc
+
+* 高级使用技巧（Port Variants）:
+
+Port Variants为我们提供了一种自定义编译选项的方法（和Gentoo中的USE标签类似）。
+
+获取可用的选项:
+    
+    port variants gcc
+
+调用variants进行编译:
+    
+    sudo port －v install fetchmail ＋ssl
+
+### Homebrew
+
+Homebrew为Mac OS X提供了非常方便的软件安装方式，解决了包的依赖问题，不再需要烦人的sudo，一键式编译，无参数困扰。
 
 由于Homebrew的安装方式可能变化，请到[官方网站](http://brew.sh)查看最新的方法和文档。
 
@@ -92,7 +192,7 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
     brew update
     brew doctor
 
-## homebrew-cask
+### homebrew-cask
 
 通常OS X下二进制软件是通过App Store安装的，homebrew-cask是一个基于HomeBrew的软件安装程序，使用homebrew-cask可以在命令行下安装软件包，相对Mac App Store，还有一些优势：
 
@@ -106,12 +206,12 @@ homebrew-cask和Homebrew的区别：
 * Homebrew安装的是源文件包, 下载源文件、编译、安装，比如安装wget, gnupg, mutt等。
 * homebrew-cask安装的是二进制软件包, 比如QQ，Chrome，evernote等。homebrew-cask安装软件时自动创建软连接到Application目录，这样在Launchpad中也能查看到安装的软件，方便启动软件。
 
-### 安装homebrew-cask
+#### 安装homebrew-cask
 
     brew tap phinze/cask
     brew install brew-cask
 
-### 常用命令
+#### 常用命令
 
 列出所有可以被安装的软件：
 
@@ -142,7 +242,7 @@ homebrew-cask和Homebrew的区别：
     brew cask uninstall APP && brew cask install APP
 
 
-### 一键装机？有了homebrew-cask就可以
+#### 一键装机？有了homebrew-cask就可以
 
     brew cask install alfred
     brew cask install qq
