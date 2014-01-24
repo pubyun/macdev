@@ -59,9 +59,11 @@ MacPorts会自己重新编译系统现有库，编译时间较长，好处是不
 * 安装MacPorts:
 
 1.安装Xcode和Xcode Command Line Tools
+
 2.在终端中同意Xcode许可
     
     sudo xcodebuild －license
+
 3.到[这里](https://www.macports.org/install.php)选择与你系统版本相符的pkg包，下载并安装
 
 * 常用命令
