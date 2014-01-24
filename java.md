@@ -54,6 +54,8 @@ Mac OS X Mavericks系统安装的时候，不带Java，但是可以通过简单�
 
 ## 安装Eclipse
 
+### 手工安装
+
 从下列地址下载Eclipse的相应版本，我一般选用'Eclipse IDE for Java EE Developers':
 
     http://www.eclipse.org/downloads/
@@ -62,9 +64,26 @@ Mac OS X Mavericks系统安装的时候，不带Java，但是可以通过简单�
 
 编辑文件'~/.zshrc'或'~/.bash_profile'，加入：
 
-   export JAVA_HOME=/Applications/eclipse
+   export ECLIPSE_HOME=/Applications/eclipse
 
-编辑目录'$ECLIPSE_HOME/Eclipse.app/Contents/MacOS'下的eclipse.ini文件。如果没有设置ECLIPSE_HOME变量，则在'Finder'程序下，右键点击(Ctrl+点击)Eclipse执行程序，选择'Show Package Contents'，然后选择Contents目录下的MacOS目录，打开eclipse.ini文件，修改下列一些变量：
+### 使用homebrew-cask安装
+
+    % brew cask alfred link
+    % brew cask install eclipse-ide
+    ==> Downloading http://download.eclipse.org/technology/epp/downloads/release/kepler/SR1/e
+    ######################################################################## 100.0%
+    ==> Symlinking App 'Eclipse.app' to '/Users/ppyy/Applications/Eclipse.app'
+    ==> Success! eclipse-ide installed to /opt/homebrew-cask/Caskroom/eclipse-ide/4.3.1
+
+这里'brew cask alfred link'可以使homebrew cask安装的程序被Alfed搜索到，可以快速启动。
+
+编辑文件'~/.zshrc'或'~/.bash_profile'，加入：
+
+   export ECLIPSE_HOME=/opt/homebrew-cask/Caskroom/eclipse-ide/4.3.1/eclipse/
+
+### eclipse的优化
+
+安装完毕eclipse以后，为了优化eclipse的运行，可以编辑目录'$ECLIPSE_HOME/Eclipse.app/Contents/MacOS'下的eclipse.ini文件。如果没有设置ECLIPSE_HOME变量，则在'Finder'程序下，右键点击(Ctrl+点击)Eclipse执行程序，选择'Show Package Contents'，然后选择Contents目录下的MacOS目录，打开eclipse.ini文件，修改下列一些变量：
 
     --launcher.XXMaxPermSize
     2048m
