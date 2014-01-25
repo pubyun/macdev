@@ -149,7 +149,7 @@ Homebrew为Mac OS X提供了非常方便的软件安装方式，解决了包的�
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
     brew doctor
 
-更新formulae和Homebrew:
+更新formula和Homebrew:
 
     brew update
 
