@@ -46,6 +46,9 @@ Time Machine这么强大的功能，设置其实很简单，苹果官方网站�
 
     /Library/Application Support/
     /Library/Caches/
+    /private/var/log/
+    /private/var/vm/
+    /private/var/tmp/
     ~/Downloads/
     ~/Library/Caches
     ~/Library/Application Support/MobileSync/
