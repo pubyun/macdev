@@ -287,8 +287,15 @@ https://github.com/sorin-ionescu/prezto
 
 ## 浏览器
 
-Google Chrome
-firefox
+### Google Chrome
+
+内置Intel HD 4000/HD 5000/Iris系列显卡的机器，比如2012 Mac Air, 2013 Mac pro 13等，在OS X操作系统上运行Chrome，会频繁发生操作系统死机的情况。这个问题在[2012.6.28就被Google确认](http://gizmodo.com/5922235/we-were-right-google-confirms-chrome-is-to-blame-for-crashing-macbooks)，是OS X内核的一个Bug，直到现在一直没有修正。
+
+临时的解决办法是，关闭Chrome的硬件加速, 在Chrome的设置里，选择"Show advanced settings"，然后关闭选项"Use hardware acceleration when available"。
+
+### Safari
+
+### Firefox
 
 ## 编辑器
 
