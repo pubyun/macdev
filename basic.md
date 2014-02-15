@@ -15,12 +15,6 @@ Alfred是Mac平台上使用最频繁的效率工具，被誉为神兵利器。Al
 
 具体的安装和使用方法可以参见[官方网站](http://www.alfredapp.com/)和搜索相关资料。
 
-## iTerm2
-
-Mac是一个具有精致图形界面的Unix平台，作为开发人员，经常会使用到终端(Terminal)或者称作控制台(Console)。系统自带的Terminal程序已经做得不错了，但是iTerm2的功能依然要更强大一些。
-
-具体的安装和使用方法可以参见[官方网站](http://www.iterm2.com/)和搜索相关资料。
-
 ## Xcode Command Line Tools
 
 Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcode的一部分。安装很多Unix软件都需要使用GCC编译器等开发工具，Xcode Command Line Tools就包含这些工具。
@@ -258,6 +252,24 @@ homebrew-cask和Homebrew的区别：
     brew cask install mou
     brew cask install iterm2
     brew cask install sublime-text
+
+## iTerm2
+
+Mac是一个具有精致图形界面的Unix平台，作为开发人员，经常会使用到终端(Terminal)或者称作控制台(Console)。系统自带的Terminal程序已经做得不错了，但是iTerm2的功能依然要更强大一些。
+
+具体的安装和使用方法可以参见[官方网站](http://www.iterm2.com/)和搜索相关资料。
+
+## Go2Shell
+
+Go2Shell可以方便地实现在Finder当前目录中打开一个终端，如果你经常需要在Finder和终端下切换工作，那么Go2Shell是你的必备工具。
+
+安装完毕之后进入Applications文件夹中按住command键拖动Go2Shell图标到Finder工具栏上，以后点击可开启终端到当前路径。
+
+Go2Shell可以配合Iterm2使用，设置方式是在Termial執行下述命令
+
+    open -a go2shell --args config
+
+跳出Go2Shell Setup，选iTerm2
 
 ## zsh
 
