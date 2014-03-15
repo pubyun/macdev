@@ -28,11 +28,11 @@ Mac OS X Mavericks系统安装的时候，不带Java，但是可以通过简单�
 
 获取Java 1.6的JAVA_HOME：
 
-    usr/libexec/java_home -v 1.6
+    /usr/libexec/java_home -v 1.6
 
 获取Java 1.7的JAVA_HOME：
 
-    usr/libexec/java_home -v 1.7
+    /usr/libexec/java_home -v 1.7
 
 使用动态的方式设置JAVA_HOME的好处是，当自动升级了新版本的JAVA时，总能找到合适的JAVA_HOME目录。基于这个原因，程序员不要将文件安装在'/System'目录的JDK，因为Java升级的时候，文件会丢失。
 
