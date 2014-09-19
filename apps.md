@@ -43,7 +43,7 @@
 * QQ
 * AliWangWang
 * Skype
-* LimeChar（IRC）
+* LimeChat（IRC）
 
 ## 虚拟机
 
