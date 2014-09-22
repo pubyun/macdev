@@ -140,7 +140,7 @@ Homebrew为Mac OS X提供了非常方便的软件安装方式，解决了包的�
 
 安装Homebrew:
 
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
 
 更新formula和Homebrew:
