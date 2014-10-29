@@ -204,8 +204,7 @@ homebrew-cask和Homebrew的区别：
 
 #### 安装homebrew-cask
 
-    brew tap phinze/cask
-    brew install brew-cask
+    brew install caskroom/cask/brew-cask
 
 #### 常用命令
 
