@@ -14,7 +14,7 @@ Mac OS X支持网络安装和本地安装。网络安装，就是直接使用com
 
 本地安装，就是预先下载安装镜像，制作安装盘，直接从本地安装盘安装。这样时间进度可控，出现问题的风险小。以后进行重新安装和恢复的时候，再也不用重新从网络长时间等待下载，整个安装过程一般在半个小时内完成。
 
-苹果缺省的安装方式是网络安装，但是我们推荐使用本地安装方式。因为网络安装的方式在美国可能很适合，安装速度很快，但是中国大陆需要从境外服务器下载。Mavericks（10.9）安装镜像有5.3G大，即使你的网速有100Mbps或者更高，你也经常会发现网络安装的过程是一个痛苦的体验，往往看着安装进度条蜗牛一般前进，提示还有上百小时才能下载完毕。
+苹果缺省的安装方式是网络安装，但是我们推荐使用本地安装方式。因为网络安装的方式在美国可能很适合，安装速度很快，但是中国大陆需要从境外服务器下载。Yosemite（10.10）安装镜像有5.2G大，即使你的网速有100Mbps或者更高，你也经常会发现网络安装的过程是一个痛苦的体验，往往看着安装进度条蜗牛一般前进，提示还有上百小时才能下载完毕。
 
 ## DNS服务器的选择
 
@@ -34,7 +34,7 @@ Mac OS X支持网络安装和本地安装。网络安装，就是直接使用com
 
 首先在磁盘工具内的"Options"里，选择GUID，否则无法启动，然后在"Partision Layout"将移动硬盘分成三个分区：
 
-* 分区名字Mavericks，大小8G，格式是Mac OS Extended(Journaled)，本地磁盘安装介质的制作，方便以后安装系统。
+* 分区名字Yosemite，大小8G，格式是Mac OS Extended(Journaled)，本地磁盘安装介质的制作，方便以后安装系统。
 
 * 分区名字recovery，大小2G，格式是Mac OS Extended(Journaled)，恢复助手，用于对系统进行恢复。
 
@@ -44,11 +44,11 @@ Mac OS X支持网络安装和本地安装。网络安装，就是直接使用com
 
 你可以从Mac App Store下载安装镜像:
 
-    https://itunes.apple.com/cn/app/os-x-mavericks/id675248567?mt=12
+    https://itunes.apple.com/us/app/os-x-yosemite/id915041082?mt=12
 
-从App Store完成下载后，OS X Mavericks安装程序会自动启动，不要点击继续，停在安装界面第一页。插入刚才分区好的移动硬盘或者U盘，在命令行输入下面的命令，制作安装盘:
+从App Store完成下载后，OS X Yosemite安装程序会自动启动，不要点击继续，停在安装界面第一页。插入刚才分区好的移动硬盘或者U盘，在命令行输入下面的命令，制作安装盘:
 
-    sudo /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/Mavericks --applicationpath /Applications/Install\ OS\ X\ Mavericks.app --nointeraction
+    sudo /Applications/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/Yosemite --applicationpath /Applications/Install\ OS\ X\ Yosemite.app --nointeraction
 
 等待创建完成，你就拥有了一个安装启动盘，以后都可以用来安装恢复系统。
 

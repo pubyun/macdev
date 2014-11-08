@@ -10,3 +10,4 @@
 * [Best-App] (https://github.com/hzlzh/Best-App)
 * [laptop] (https://github.com/thoughtbot/laptop)
 * [简单4步，创建 OS X Mavericks USB 安装启动盘] (http://ksmx.me/blog/2013/10/24/create-an-os-x-mavericks-usb-installer/)
+* [How to make a bootable OS X 10.10 Yosemite install drive] (http://www.macworld.com/article/2367748/how-to-make-a-bootable-os-x-10-10-yosemite-install-drive.html)

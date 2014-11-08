@@ -2,7 +2,7 @@
 
 ## Python (可选)
 
-虽然Mavericks自带了Python，但是我们可以选择使用Homebrew安装Python 2.7.x。因为：
+虽然Mac OS X 自带了Python，但是我们可以选择使用Homebrew安装Python 2.7.x。因为：
 
 * 使用Homebrew安装更新的python版本
 * 同时安装2.7.x和3.x的python
