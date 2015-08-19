@@ -62,6 +62,7 @@
 
 * GoAgentX
 * Tunnelblick
+* ShadowsocksX
 
 ## 开发相关
 
