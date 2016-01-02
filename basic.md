@@ -22,7 +22,7 @@ Xcode是Apple的一个开发工具和库集合，Xcode Command Line Tools是Xcod
 检查Xcode Command Line Tools是否已经安装：
 
     $ xcode-select -p
-    /Library/Developer/CommandLineTools
+    /Applications/Xcode.app/Contents/Developer
 
 打开一个终端窗口(Terminal)，运行命令：
 
