@@ -6,6 +6,10 @@
 * OmniFocus（GTD极品,学习成本比较高）
 * OmniGraffle（流程图）
 * OmniOutliner（提纲思路）
+* Oh My Zsh
+
+## The missing package manager for OS X
+* Homebrew
 
 ## 系统工具
 
@@ -70,6 +74,8 @@
 * Vagrant
 * Mou（Markdown编辑器）
 * Haroopad（Markdown编辑器）
+* MacDown (Markdown 编辑器)
+* Atom (IDE)
 * TextMate（编辑器）
 * Sublime Text（编辑器）
 * XCode（IDE）
