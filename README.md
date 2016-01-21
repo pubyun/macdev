@@ -15,7 +15,7 @@ You can also follow my [weibo](http://weibo.com/pubyun) for the latest news.
 * [Installation of OS X](https://github.com/pubyun/macdev/blob/master/install.md)
 * [Backup and recovery of OS X](https://github.com/pubyun/macdev/blob/master/recovery.md)
 * [Basic configuration](https://github.com/pubyun/macdev/blob/master/basic.md)
-* [Development enviroment of Python](https://github.com/pubyun/macdev/blob/master/python.md)
+* [Development enviroment of Python](https://github.com/pubyun/macdev/blob/master/python.en.md)
 * Development enviroment of Ruby - Work in progress ...
 * [Development enviroment of Java](https://github.com/pubyun/macdev/blob/master/java.md)
 * [Development enviroment of PHP](https://github.com/pubyun/macdev/blob/master/php.md)
