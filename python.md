@@ -54,11 +54,11 @@
 
 创建第一个python 2 的 virtualenv：
 
-    mkvirtualenv --no-site-packages test
+    mkvirtualenv test
 
 创建第一个python 3 的 virtualenv：
 
-    mkvirtualenv --python=/usr/local/bin/python3 --no-site-packages test
+    mkvirtualenv -p python3 test
 
 ## PyCharm
 

@@ -44,11 +44,11 @@ To config virtualenv in .zshrc or .bash_profile
 
 To create the first python 2 virtualenv:
 
-    mkvirtualenv --no-site-packages test
+    mkvirtualenv test
 
 To create the first python 3 virtualenv:
 
-    mkvirtualenv --python=/usr/local/bin/python3 --no-site-packages test
+    mkvirtualenv -p python3 test
 
 ## PyCharm
 
