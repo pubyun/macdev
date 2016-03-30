@@ -42,9 +42,13 @@ To config virtualenv in .zshrc or .bash_profile
     export PIP_RESPECT_VIRTUALENV=true
 
 
-To create the first virtualenv:
+To create the first python 2 virtualenv:
 
     mkvirtualenv --no-site-packages test
+
+To create the first python 3 virtualenv:
+
+    mkvirtualenv --python=/usr/local/bin/python3 --no-site-packages test
 
 ## PyCharm
 

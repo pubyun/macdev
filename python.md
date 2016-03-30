@@ -52,9 +52,13 @@
     export PIP_RESPECT_VIRTUALENV=true
 
 
-创建第一个virtualenv：
+创建第一个python 2 的 virtualenv：
 
     mkvirtualenv --no-site-packages test
+
+创建第一个python 3 的 virtualenv：
+
+    mkvirtualenv --python=/usr/local/bin/python3 --no-site-packages test
 
 ## PyCharm
 
