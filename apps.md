@@ -29,6 +29,7 @@
 * KeyCue（快捷键大全）
 * PopClip（增强复制粘贴）
 * FileZilla (FTP工具)
+* Retina DisplayMenu (更改显示器分辨率, 可超频)
 
 ## 压缩和解压缩
 
