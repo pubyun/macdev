@@ -117,5 +117,6 @@
 
 * 迅雷
 * VLC（影音）
+* f.lux (自动调节色温保护眼睛)
 * CoRD（RDP远程桌面）
 * TeamViewer（远程控制）
