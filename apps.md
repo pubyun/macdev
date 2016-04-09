@@ -90,7 +90,7 @@
 * Wireshark（网络流量分析）
 * CocoaPacketAnalyzer（网络流量分析）
 * SourceTree（Git图形客户端）
-* GitHub（Git图形客户端）
+* GitHub Desktop（Git图形客户端）
 * SmartSVN（SVN图形客户端）
 * Navicat（数据库管理）
 * RoboMongo（MongoDB数据库管理）
