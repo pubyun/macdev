@@ -20,6 +20,7 @@
 * CleanMyMac 3（垃圾清理）
 * iterm2（终端）
 * ShiftIt（快捷键窗口控制）
+* Asepsis (转存 .DS_Store)
 * Gas Mask（Host切换）
 * Itsycal（显示日历）
 * cd to
