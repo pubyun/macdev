@@ -3,6 +3,7 @@
 ## 效率工具
 
 * Evernote（知识管理工具）
+    * Geeknote (终端版Evernote)
 * OmniFocus（GTD极品,学习成本比较高）
 * OmniGraffle（流程图）
 * OmniOutliner（提纲思路）
@@ -19,6 +20,7 @@
 * CleanMyMac 3（垃圾清理）
 * iterm2（终端）
 * ShiftIt（快捷键窗口控制）
+* Asepsis (转存 .DS_Store)
 * Gas Mask（Host切换）
 * Itsycal（显示日历）
 * cd to
@@ -26,6 +28,8 @@
 * Alfred（万能搜索）
 * KeyCue（快捷键大全）
 * PopClip（增强复制粘贴）
+* FileZilla (FTP工具)
+* Retina DisplayMenu (更改显示器分辨率, 可超频)
 
 ## 压缩和解压缩
 
@@ -87,7 +91,7 @@
 * Wireshark（网络流量分析）
 * CocoaPacketAnalyzer（网络流量分析）
 * SourceTree（Git图形客户端）
-* GitHub（Git图形客户端）
+* GitHub Desktop（Git图形客户端）
 * SmartSVN（SVN图形客户端）
 * Navicat（数据库管理）
 * RoboMongo（MongoDB数据库管理）
@@ -114,5 +118,6 @@
 
 * 迅雷
 * VLC（影音）
+* f.lux (自动调节色温保护眼睛)
 * CoRD（RDP远程桌面）
 * TeamViewer（远程控制）
