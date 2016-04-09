@@ -3,6 +3,7 @@
 ## 效率工具
 
 * Evernote（知识管理工具）
+    * Geeknote (终端版Evernote)
 * OmniFocus（GTD极品,学习成本比较高）
 * OmniGraffle（流程图）
 * OmniOutliner（提纲思路）
