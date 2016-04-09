@@ -28,6 +28,7 @@
 * Alfred（万能搜索）
 * KeyCue（快捷键大全）
 * PopClip（增强复制粘贴）
+* FileZilla (FTP工具)
 
 ## 压缩和解压缩
 
