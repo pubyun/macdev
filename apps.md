@@ -8,6 +8,7 @@
 * OmniGraffle（流程图）
 * OmniOutliner（提纲思路）
 * Oh My Zsh
+* autojump (直达目录)
 
 ## The missing package manager for OS X
 * Homebrew
