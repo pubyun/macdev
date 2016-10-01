@@ -27,9 +27,7 @@
     $ vim ~/.pip/pip.conf
     ; http://www.pypi-mirrors.org/
     [global]
-    use-mirrors=true
-    mirrors=http://pypi.douban.com
-    index-url=http://pypi.douban.com/simple
+    index-url=https://pypi.doubanio.com/simple
 
 ## virtualenv virtualenvwrapper
 
