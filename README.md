@@ -31,6 +31,7 @@ You can also follow my [weibo](http://weibo.com/pubyun) for the latest news.
 * [OS X的备份和恢复](https://github.com/pubyun/macdev/blob/master/recovery.md)
 * [基本设置](https://github.com/pubyun/macdev/blob/master/basic.md)
 * [python开发环境的设置](https://github.com/pubyun/macdev/blob/master/python.md)
+* [Golang开发环境配置](https://github.com/pubyun/macdev/blob/master/go.md)
 * ruby开发环境的设置 - 整理中...
 * [Java开发环境的设置](https://github.com/pubyun/macdev/blob/master/java.md)
 * [PHP开发环境的设置](https://github.com/pubyun/macdev/blob/master/php.md)
