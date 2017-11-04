@@ -62,4 +62,56 @@
 
 PyCharm是python最好的集成开发工具，目前有专业版和社区版可供选择。
 
+### 安装pwntools
+先更新 homebrew !!官方的巨慢无比
+
+```
+echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bash_profile
+source ~/.bash_profile
+```
+安装
+
+执行brew install pwntools等待一会就安装完成，会自动解决依赖关系。安装完后会在/usr/local/Cellar/(可能不一样)目录下生成pwntools文件夹，其中python的包在:
+
+
+/usr/local/Cellar/pwntools/3.6.1/libexec/lib/python2.7/site-packages
+
+/usr/local/Cellar/pwntools/3.6.1/libexec/lib/python2.7/site-packages
+ 
+然后需要把路径添加到python的sys.path中，这里使用的方法是在默认包目录下创建文件mypkpath.pth然后把目录写进去:
+
+
+$ cd /Library/Python/2.7/site-packages
+$ sudo vim mypkpath.pth
+$ cat mypkpath.pth
+/usr/local/Cellar/pwntools/3.6.1/libexec/lib/python2.7/site-packages
+
+$ cd /Library/Python/2.7/site-packages
+$ sudo vim mypkpath.pth
+$ cat mypkpath.pth
+/usr/local/Cellar/pwntools/3.6.1/libexec/lib/python2.7/site-packages
+ 
+测试
+
+不报错就可以知道安装成功:
+
+
+$ python
+Python 2.7.10 (default, Feb  7 2017, 00:08:15)
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.34)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from pwn import *
+>>> print disasm('b817000000'.decode('hex'), arch = 'amd64')
+   0:   b8 17 00 00 00          mov    eax,0x17
+
+
+
+$ python
+Python 2.7.10 (default, Feb  7 2017, 00:08:15)
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.34)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from pwn import *
+>>> print disasm('b817000000'.decode('hex'), arch = 'amd64')
+   0:   b8 17 00 00 00          mov    eax,0x17
+ 
 
